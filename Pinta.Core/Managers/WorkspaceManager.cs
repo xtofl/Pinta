@@ -267,9 +267,9 @@ namespace Pinta.Core
 		internal void ResetTitle ()
 		{
 			if (HasOpenDocuments)
-				PintaCore.Chrome.MainWindow.Title = string.Format ("{0}{1} - Pinta", ActiveDocument.Filename, ActiveDocument.IsDirty ? "*" : "");
+				PintaCore.Chrome.MainWindow.Title = string.Format ("{0}{1} - PintaPrinta", ActiveDocument.Filename, ActiveDocument.IsDirty ? "*" : "");
 			else
-				PintaCore.Chrome.MainWindow.Title = "Pinta";
+				PintaCore.Chrome.MainWindow.Title = "PintaPrinta";
 		}
 
 		public void SetActiveDocument (int index)

@@ -71,7 +71,8 @@ namespace Pinta.Core
 			Open.ShortLabel = Catalog.GetString ("Open");
 			Open.IsImportant = true;
 			Save.IsImportant = true;
-			
+			Print.IsImportant = true;
+
 			Close.Sensitive = false;
 			Print.Sensitive = false;
 		}
@@ -88,7 +89,7 @@ namespace Pinta.Core
 			menu.Append (SaveAs.CreateAcceleratedMenuItem (Gdk.Key.S, Gdk.ModifierType.ControlMask | Gdk.ModifierType.ShiftMask));
 			menu.AppendSeparator ();
 			// Printing is disabled for now until it is fully functional.
-#if false
+#if true
 			menu.Append (Print.CreateAcceleratedMenuItem (Gdk.Key.P, Gdk.ModifierType.ControlMask));
 			menu.AppendSeparator ();
 #endif
